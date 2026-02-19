@@ -1,0 +1,10 @@
+main, .content {
+  margin-left: 16.5625rem; /* same as .sidenav width */
+  transition: margin-left 0.3s ease;
+}
+
+/* If you collapse the sidebar by adding .sidenav-collapsed on body */
+body.sidenav-collapsed main,
+body.sidenav-collapsed .content {
+  margin-left: 5rem; /* match .sidenav-collapsed width */
+}
