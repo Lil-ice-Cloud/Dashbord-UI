@@ -20,9 +20,35 @@ export class Leftsidebar {
       label: 'Dashboard',
     },
     {
+      routeLink: 'calculator',
+      icon: 'fal fa-calculator',
+      label: 'Calculator',
+    },
+    {
       routeLink: 'products',
-      icon: 'fal fa-box-open',
+      icon: 'fal fa-box',
       label: 'Products',
+    },
+
+    {
+      routeLink: 'people',
+      icon: 'fal fa-users',
+      label: 'People',
+    },
+    {
+      routeLink: 'charts',
+      icon: 'fal fa-chart-pie',
+      label: 'Charts',
+    },
+    {
+      routeLink: 'money',
+      icon: 'fal fa-dollar-sign',
+      label: 'Money',
+    },
+    {
+      routeLink: 'delivery',
+      icon: 'fal fa-truck',
+      label: 'Delivery',
     },
     {
       routeLink: 'pages',
@@ -30,10 +56,20 @@ export class Leftsidebar {
       label: 'Pages',
     },
     {
-      routeLink: 'settings',
-      icon: 'fal fa-cog',
-      label: 'Settings',
+      routeLink: 'messegers',
+      icon: 'fal fa-comment',
+      label: 'Messegers',
     },
+    {
+      routeLink: 'network',
+      icon: 'fal fa-network-wired',
+      label: 'Network',
+    },
+    {
+      routeLink: 'sing-out',
+      icon: 'fal fa-sign-out-alt',
+      label: 'Sing Out',
+    }
   ];
 
   toggleCallapse(): void {
