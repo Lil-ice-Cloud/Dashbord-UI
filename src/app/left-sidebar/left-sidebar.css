@@ -19,12 +19,12 @@
   width: 100%;
 }
 .sidenav .logo-container .logo {
-  background: #fff;
+  background: #063ca1;
   text-align: center;
-  width: 3rem;
-  min-width: 3rem;
-  border-radius: 0.313rem;
-  padding: 0.313rem;
+  width: 45px;
+  min-width: auto;
+  border-radius: 100%;
+  padding: 8px;
   font-size: 24px;
   font-weight: 900;
   cursor: pointer;
@@ -148,6 +148,7 @@
     color: #fff;
     font-size: 20px;
   }
+
 }
 
 .active {
