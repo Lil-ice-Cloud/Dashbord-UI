@@ -1,3 +1,115 @@
+.header-container {
+  display: flex;
+  align-items: center; /* Vertically centers the nav with the text */
+  gap: 20px;           /* Adds space between "Dashboard" and the nav */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
 .Dash-color {
   color: #021d74;
+}
+
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+
+
+
+
+}
+
+.navbar-container .navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+    outline: 1.5px solid rgba(65, 64, 64, 0.3);
+    list-style: none;
+    padding: 2px;
+    border-radius: 8px;
+
+}
+.navbar-container .navbar-menu li a{
+  text-decoration: none;
+  color: rgb(48, 47, 47);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1px 3px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.7s ease;
+  white-space: nowrap;
+  background-color: #bdc0c5;
+  border-radius: 10px;
+}
+
+.navbar-container .navbar-menu li a:hover {
+  background-color: #063ca1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+
+/* Container for the entire list */
+.droplist {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative; /* Essential for positioning the dropdown */
+  display: inline-block;
+
+}
+
+/* Style the parent list item and its link */
+.droplist li {
+  position: relative; /* Essential for positioning the dropdown */
+  display: inline-block;
+}
+
+.droplist > li > a {
+  display: block;
+  padding: 1px 2px;
+  background-color: #fff;
+  border: #333 solid 1px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Hide the dropdown menu initially */
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; /* Positions it directly below the parent */
+  left: 0;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Show the dropdown on hover */
+.droplist li:hover .dropdown {
+  display: block;
+}
+
+/* Style individual links inside the dropdown */
+.dropdown li a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect for dropdown items */
+.dropdown li a:hover {
+  background-color: #ddd;
 }
