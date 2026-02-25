@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  align-items: center; /* Vertically centers the nav with the text */
+  gap: 20px;           /* Adds space between "Dashboard" and the nav */
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -19,6 +19,10 @@
   display: flex;
   align-items: center;
   backdrop-filter: blur(10px);
+
+
+
+
 }
 
 .navbar-container .navbar-menu {
@@ -28,6 +32,7 @@
     list-style: none;
     padding: 2px;
     border-radius: 8px;
+
 }
 .navbar-container .navbar-menu li a{
   text-decoration: none;
@@ -50,20 +55,19 @@
   padding: 2px 5px;
 }
 
-
+/* Container for the entire list */
 .droplist {
-  padding-left: 63rem;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  position: relative;
+  position: relative; /* Essential for positioning the dropdown */
   display: inline-block;
 
 }
 
-
+/* Style the parent list item and its link */
 .droplist li {
-  position: relative;
+  position: relative; /* Essential for positioning the dropdown */
   display: inline-block;
 }
 
@@ -77,11 +81,11 @@
   border-radius: 5px;
 }
 
-
+/* Hide the dropdown menu initially */
 .dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 100%; /* Positions it directly below the parent */
   left: 0;
   min-width: 160px;
   background-color: #f9f9f9;
@@ -92,10 +96,12 @@
   z-index: 1;
 }
 
+/* Show the dropdown on hover */
 .droplist li:hover .dropdown {
   display: block;
 }
 
+/* Style individual links inside the dropdown */
 .dropdown li a {
   color: #333;
   padding: 12px 16px;
@@ -103,388 +109,7 @@
   display: block;
 }
 
+/* Hover effect for dropdown items */
 .dropdown li a:hover {
   background-color: #ddd;
-}
-
-.card {
-  width: 190px;
-  height: 80px;
-  border-radius: 20px;
-  background: #ff91009f;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #ff9100;
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.card-details {
-  color: rgb(165, 91, 17);
-  height: 100%;
-  text-align: center;
-}
-
-
-.text-body {
-  color: rgb(165, 91, 17);
-  text-align: center;
-}
-
-.text-title {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.card2 {
-  width: 190px;
-  height: 80px;
-  border-radius: 20px;
-  background: #01eeffc7;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #08afcc;
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.card2-details {
-  color: #076e97;
-  height: 100%;
-  text-align: center;
-}
-
-
-.text2-body {
-  color: #076e97;
-  text-align: center;
-}
-
-.text2-title {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-.card3 {
-  width: 190px;
-  height: 80px;
-  border-radius: 20px;
-  background: #FFE8D0;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #ffe600;
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.card3-details {
-  color: rgb(165, 91, 17);
-  height: 100%;
-  text-align: center;
-}
-
-
-.text3-body {
-  color: rgb(165, 91, 17);
-  text-align: center;
-}
-
-.text3-title {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-.card4 {
-  width: 190px;
-  height: 80px;
-  border-radius: 20px;
-  background: lightgreen;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid rgb(11, 126, 7);
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.card4-details {
-  color: rgb(11, 126, 7);
-  height: 100%;
-  text-align: center;
-}
-
-
-.text4-body {
-  color: rgb(11, 126, 7);
-  text-align: center;
-}
-
-.text4-title {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.card5 {
-  width: 190px;
-  height: 80px;
-  border-radius: 20px;
-  background: #ff000042;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #ff0000;
-  transition: 0.5s ease-out;
-  overflow: visible;
-}
-
-.card5-details {
-  color: #ff0000;
-  height: 100%;
-  text-align: center;
-}
-
-
-.text5-body {
-  color: #ff0000;;
-  text-align: center;
-}
-
-.text5-title {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-
-
-.card:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover {
-  border-color: #021d74;
-}
-
-
-
-.tab-container .tab-menu {
-    display: flex;
-    gap: 1.5rem;
-    outline: transparent;
-    list-style: none;
-
-    border-radius: 8px;
-
-}
-.tab-container .tab-menu li a{
-  text-decoration: none;
-  color: transparent;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 1px 3px;
-  border-radius: 5px;
-  border: 2px solid transparent;
-  transition: all 0.7s ease;
-  white-space: nowrap;
-  background-color: #bdc0c5;
-  border-radius: 10px;
-}
-
-.calender-card {
-  width: 452px;
-  height: 820px;
-  border-radius: 20px;
-  background: #1e7c7c2f;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #012e3bbd;
-  transition: 0.5s ease-out;
-  overflow: visible;
-  box-shadow: #333;
-}
-
-.card-calender {
-  color: #ff0000;
-  height: 100%;
-  text-align: center;
-}
-.chart {
-  display: flex;
-  align-items: flex-end;
-  gap: 20px;
-  width: 650px;
-  height: 400px;
-  border-left: 2px solid #333;
-  border-bottom: 2px solid #333;
-  padding: 20px;
-
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-  inset 0 0 10px rgba(255,255,255,0.5);
-}
-
-.year {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.bars {
-  display: flex;
-  gap: 5px;
-  align-items: flex-end;
-}
-
-.bar {
-  width: 30px;
-  border-radius: 4px 4px 0 0;
-}
-
-.income {
-  background-color: green;
-}
-
-.expenditure {
-  background-color: blue;
-}
-
-.label {
-  margin-top: 5px;
-  font-weight: bold;
-
-}
-
-
-.bullet1, .bullet2 {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.bullet1::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: green;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-.bullet2::before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background-color: blue;
-  border-radius: 3px;
-  display: inline-block;
-}
-
-
-
-.donut {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: conic-gradient(
-    #4CAF50 0% 30%,
-    #FF9800 30% 38%,
-    #F44336 38% 60%,
-    #2196F3 60% 100%
-  );
-  position: relative;
-  text-decoration: none;
-
-}
-
-.donut-chart{
-  width: 200px;
-  list-style-type: none;
-  border-radius: 20px;
-  background: rgb(243, 248, 243);
-  padding: 4px;
-  border: 2px solid rgb(255, 255, 255);
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.3),
-  inset 0 0 10px rgba(255,255,255,0.5);
-
-}
-
-.donut::after {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
-  background: #fff;
-}
-
-.legend {
-  margin-top: 20px;
-  font-family: "Poppins", sans-serif;
-  list-style-type: none;
-}
-
-
-.legend div {
-  margin: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.legend span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 8px;
-}
-
-
-.supermarkets { background: #4CAF50; }
-.gas { background: #FF9800; }
-.fastfood { background: #F44336; }
-.stores { background: #2196F3; }
-
-
-
-.table-padding{
-  width: 1180px;
-  height: 300px;
-  border-radius: 20px;
-  background: #1e7c7c2f;
-  position: relative;
-  padding: 1.4rem;
-  border: 2px solid #012e3bbd;
-  transition: 0.5s ease-out;
-  overflow: visible;
-  box-shadow: #333;
-}
-
-.finance-table {
-  width: 100%;
-  height: 40%;
-  border-collapse: collapse;
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  list-style-type: none;
-
-}
-
-
-.finance-table th, .finance-table td {
-  border: 2px solid transparent;
-  padding: 10px 30px;
-  color: #000;
-  font-size: 14px;
-}
-
-.finance-table th {
-  background: #1e7c7c2f;
-  color: black;
-  font-weight: bold;
-}
-
-.finance-table tr:nth-child(even) {
-  background: #f9f9f9;
-}
-
-.finance-table tr:hover {
-  background: #1e7c7c2f;
 }
